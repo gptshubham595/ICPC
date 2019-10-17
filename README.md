@@ -82,3 +82,41 @@ typedef long double ldb;
  
 using namespace std;
 typedef pair <lli,lli> pll;
+
+
+
+
+================================================================
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+int t;
+cin>>t;
+for(int T=0;T<t;T++)
+	{
+	  int n,k;
+	  cin>>n>>>k;
+	  vector<int> a(n);
+	  for(int i=0;i<n;i++)cin>>a[i];
+	  sort(a.begin(),a.end());
+	  
+	      int fi;
+	  for(int i=0;i<n;i++)if(a[i]>k)fi=a[i];
+	  int sum=0;
+	  for(int i=fi;i<n-1;i++){sum+=a[i]-k; a[i]=k;}
+	  if(sum%2==0){
+	      
+	  }
+	  else{
+	      
+	  }
+	      
+	  }
+	  
+	
+
+	return 0;
+}
+
